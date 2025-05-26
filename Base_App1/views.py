@@ -9,7 +9,7 @@ def HomeView(request):
     items = Items.objects.all()
     list = ItemList.objects.all()
     review=Feedback.objects.all()
-    return render(request,'home.html',{'items':items, 'list':list,'review':review})
+    return render(request,'home.html',{'items':items, 'list':list,'review':review })
 
 
 def AboutView(request):
@@ -70,3 +70,6 @@ def FeedbackView(request):
         return redirect('Home')  # Redirect to home page after submission
 
     return render(request, 'feedback.html')
+
+
+

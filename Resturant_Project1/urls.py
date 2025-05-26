@@ -32,6 +32,7 @@ urlpatterns = [
     path('about/', AboutView, name='About'),
     path('feedback',FeedbackView,name='Feedback'),
 
+
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0])
